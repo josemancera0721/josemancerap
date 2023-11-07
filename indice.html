@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Índice de Masa Corporal (IMC)</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Índice de Masa Corporal (IMC)</h1>
+    <p>El Índice de Masa Corporal (IMC) es una medida que evalúa la relación entre el peso y la altura de una persona. Es una herramienta ampliamente utilizada para determinar si una persona tiene un peso saludable en relación con su altura.</p>
+
+    <h2>¿Cómo se calcula el IMC?</h2>
+    <p>El IMC se calcula utilizando la siguiente fórmula:</p>
+    <pre>IMC = peso (kg) / (altura (m) * altura (m))</pre>
+
+    <h2>Pasos para calcular el IMC:</h2>
+    <ol>
+        <li>Mide tu peso en kilogramos (kg).</li>
+        <li>Mide tu altura en metros (m).</li>
+        <li>Aplica la fórmula del IMC: IMC = peso / (altura * altura).</li>
+        <li>El resultado es tu IMC, que se expresa en unidades de kg/m².</li>
+    </ol>
+
+    <h2>Interpretación del IMC:</h2>
+    <p>Una vez que tengas tu IMC, puedes interpretarlo en función de las categorías comunes:</p>
+    <ul>
+        <li>Menos de 18.5: Bajo peso</li>
+        <li>18.5 - 24.9: Peso normal</li>
+        <li>25.0 - 29.9: Sobrepeso</li>
+        <li>30.0 o más: Obeso</li>
+    </ul>
+
+    <h2>Calculadora de IMC</h2>
+    <label for="weight">Peso (kg):</label>
+    <input type="number" id="weight" placeholder="kg">
+    <label for="height">Altura (m):</label>
+    <input type="number" id="height" placeholder="m">
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p>Tu IMC es: <span id="resultado"></span></p>
+    <p id="categoria"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
